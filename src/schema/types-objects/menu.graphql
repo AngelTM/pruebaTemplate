@@ -1,0 +1,7 @@
+type Menu{
+    id: ID
+    nombre: String
+    img: String
+    status: Int
+    registerDate: String
+}

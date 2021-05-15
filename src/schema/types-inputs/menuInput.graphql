@@ -1,0 +1,5 @@
+input MenuInput{
+    nombre: String
+    img: String
+    status: Int
+}

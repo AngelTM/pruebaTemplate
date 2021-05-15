@@ -1,0 +1,20 @@
+type Query {
+    "Get all user"
+    users: [User!]!
+    "Login users"
+    login(email: String!, password: String!): ResultToken!
+    "get information with token"
+    me: ResultUser!
+}
+
+type ResultToken {
+    status: Boolean!
+    message: String!
+    token: String
+}
+
+type ResultUser {
+    status: Boolean!
+    message: String!
+    user: User
+}

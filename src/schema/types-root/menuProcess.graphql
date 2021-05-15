@@ -1,0 +1,12 @@
+type Query{
+    "status 0 regresa todos status 1 regresa solo los activos"
+    menu(status: Int!): [Menu]
+}
+
+type Mutation {
+    registraMenu(menu: MenuInput): ResultMenu!
+}
+type ResultMenu{
+    status: Boolean!
+    message: String!
+}

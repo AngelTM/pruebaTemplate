@@ -1,0 +1,10 @@
+type Mutation{
+    "Register users"
+    register(user: UserInput): ResultUser!
+}
+type ResultUser{
+    status: Boolean!
+    message: String!
+    user: User
+
+}
